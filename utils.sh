@@ -3,7 +3,7 @@
 function print_help()
 {
     printf '%s\n' 'USAGE:' \
-        '  ./generate_data.sh <path-to-linux-mainline> <from-version> <to-version>'
+        '  ./generate_data.sh <from-version> <to-version>'
 }
 
 function prepare_mainline()

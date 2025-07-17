@@ -33,4 +33,4 @@ RUN chmod +x run_experiments.sh utils.sh
 RUN git config --global --add safe.directory /linux-stats/linux-mainline
 
 # Define entrypoint as `run_experiments.sh`
-CMD ["bash", "run_experiments.sh", "linux-mainline", "v3.19", "v6.13"]
+CMD ["bash", "run_experiments.sh", "v3.19", "v6.13"]

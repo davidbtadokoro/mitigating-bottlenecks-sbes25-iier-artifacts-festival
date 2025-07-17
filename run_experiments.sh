@@ -2,17 +2,20 @@
 . 'utils.sh' --source-only
 
 # variables
-mainline=''
+mainline='linux-mainline'
 from_version=''
 to_version=''
 
-if [[ "$#" != 3 ]]; then
+if [[ "$#" != 2 ]]; then
     print_help
 fi
 
-mainline="$1"
-from_version="$2"
-to_version="$3"
+# Clone Linux mainline
+printf '* Cloning Linux mainline\n'
+git clone https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git linux-mainline
+
+from_version="$1"
+to_version="$2"
 
 # In case there is a lock on the mainline, remove it before proceding
 if [[ -f "${mainline}/.git/index.lock" ]]; then
