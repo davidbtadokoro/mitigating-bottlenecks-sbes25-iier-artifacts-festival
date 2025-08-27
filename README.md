@@ -13,7 +13,7 @@ the [call for the Artifacts Festival of CBSoft
 
 - `README.md`: README file
 - `LICENSE`: file containing the project license, the *GNU General Public License Version 3* (GPL-3.0)
-- `pre-print.pdf`: PDF file with pre-print version of the paper
+- `pre-print.pdf`: PDF file with pre-print version of the paper, which you can find in [this link](pre-print.pdf)
 - `Dockerfile`: recipe for container that generates statistics 
 - `docker-compose.yaml`: file to configure container
 - `run_experiments.sh`: script that effectively executes experiments and generates the data
